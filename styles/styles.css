@@ -1,49 +1,172 @@
-/*////////////////////////////////////////////////////////////////////////
-Table of Contents:
-    1. Global Styles
-    2. Typografie
-    3. Areas
-        3.1 Header
-        3.2 Testimonial
-        3.3 Support
-        3.4 Faq
-        3.5 Footer
-////////////////////////////////////////////////////////////////////////*/
+/*-------------basics-------------------*/
+:root {
+    --grijs: #899CA0;
+    --donkergroen: #1C2B32;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 
+    /*poppins font gebruiken*/
+}
+/*----------header----------------*/
+header {
+    /*background:url("../assets/images/mountains.jpg") no-repeat local;*/
+    background-image: url("../assets/images/mountains.jpg");
+    background-size: cover;
+    text-align: center;
+    height: 300px;
+    min-width: 250px;
+    max-width: 1000px;
+    /*border: 1px solid purple;*/
+    margin-top: -50px;
+}
+header p {
+    font-size: 7px;
+    color: black;
+}
+header h1 {
+    font-family: Poppins, sans-serif;
+    font-size: 35px;
+    color: var(--donkergroen);
+}
+.header-section {
+    padding: 96px 96px 400px;
+}
+.buttons {
+    margin-top: 10px;
+    height: 30px;
+    /*border: 3px solid red;*/
+}
+.input-1 {
 
+    background-color: transparent;
+    border-radius: 15px 0 0 15px;
+    width: 25%;
+    min-width: 30%;
+    max-width: 50%;
+    height: 25px;
+    border: 1px solid black;
+    font-size: 8px;
+    text-align: left;
+    padding-left: 5px;
 
-/*////////////////////////
-    1. Global Styles
-////////////////////////*/
+}
+::placeholder {
+    color: black;
+    opacity: 70%;
+}
+.button-1 {
+    border-radius: 0 15px 15px 0;
+    width: 25%;
+    height: 25px;
+    min-width: 25%;
+    max-width: 50%;
+    border: 1px solid black;
+    margin-left: -5px;
+    font-size: 8px;
+    text-align: center;
+    background-color: var(--donkergroen);
+    color: white;
+}
+.button-1:hover {
+    color: red;
+}
+/*--------------main-----------------*/
+.main-container {
+    position: relative;
+    text-align: center;
+    max-width: 1000px;
+    min-width:  265px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 8px;
+    /*border: 3px dotted green;*/
+}
+.main-container h5 {
+    padding-top: 25px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.container-1, .container-2 {
+    margin: 20px auto;
+    padding: 10px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 2px 2px;
+    border-radius: 4px 4px;
+    border: groove;
+}
+.qoute {
+    height: 10px;
+    float: left;
+}
+.jane, .john {
+    height: 20px;
+}
+.callcenter-pic {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px 4px;
+    margin: 10px auto;
+}
+.container-3 p {
+    text-align: left;
+}
+.container-3 a:link {
+    color: grey;
+    text-decoration: underline;
+}
+.container-3 a:hover {
+    color: red;
+    text-decoration: none;
+}
+.button-2 {
+    float: left;
+    border-radius: 15px;
+    width: 25%;
+    height: 25px;
+    border: 1px solid black;
+    margin: 10px;
+    font-size: 8px;
+    background-color: var(--donkergroen);
+    color: white;
+}
+.button-2:hover {
+    color: red;
+}
+.h5-text {
+    margin-top: 30px;
+}
+.container-4 {
+    font-size: 10px;
+    text-align: left;
+}
+/*--------Details-------------------*/
+.details {
+    text-align: left;
+}
+.details summary {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.details p {
+    border-radius: 5px 5px;
+    background-color: darkolivegreen;
+    color: white;
+    padding: 7px;
 
-
-
-/*////////////////////////
-    2. Typography
-////////////////////////*/
-
-
-
-/*////////////////////////
-    3. Areas
-////////////////////////*/
-
-
-
-/*///////////// 3.1 Header /////////////*/
-
-
-
-/*///////////// 3.2 Testimonial /////////////*/
-
-
-
-/*///////////// 3.3 Support /////////////*/
-
-
-
-/*///////////// 3.4 Faq /////////////*/
-
-
-
-/*///////////// 3.5 Footer /////////////*/
+}
+.details:hover {
+    cursor: pointer;
+}
+/*---------Footer-----------------*/
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #1C2B32;
+    color: white;
+    font-size: 6px;
+    height: 30px;
+}
